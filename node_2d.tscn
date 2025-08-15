@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://bt1a07hhonipc"]
+[gd_scene load_steps=6 format=4 uid="uid://bewnip57c80gm"]
 
 [ext_resource type="Texture2D" uid="uid://cjb4s5j0dpdge" path="res://pico-8Tiles.png" id="1_wtcfe"]
 [ext_resource type="PackedScene" uid="uid://dr52pa5lchf5e" path="res://player.tscn" id="2_0e48y"]
@@ -10,6 +10,7 @@ physics_layer_0/collision_layer = 1
 texture = ExtResource("1_wtcfe")
 margins = Vector2i(2, 0)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
 3:0/0 = 0
 4:0/0 = 0

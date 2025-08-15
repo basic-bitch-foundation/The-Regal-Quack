@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var spd := 400       
-@export var jmp_forcrc := -300  
+@export var jmp_forrc := -300  
 @export var gravity := 600   
 
 func _physics_process(delta: float) -> void:
@@ -17,7 +17,7 @@ func _physics_process(delta: float) -> void:
 
 	
 	if Input.is_action_just_pressed("ui_jump") and is_on_floor():
-		velocity.y = jmp_forcrc
+		velocity.y = jmp_forrc
 
 	
 	move_and_slide()
