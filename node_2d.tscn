@@ -4,9 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://dr52pa5lchf5e" path="res://player.tscn" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://wuck8es2gu1j" path="res://enemy.tscn" id="3_epypp"]
 
-[sub_resource type="TileSet" id="TileSet_wtcfe"]
-physics_layer_0/collision_layer = 1
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
 texture = ExtResource("1_wtcfe")
 margins = Vector2i(2, 0)
@@ -104,11 +101,12 @@ margins = Vector2i(2, 0)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0e48y")
 
+[sub_resource type="TileSet" id="TileSet_wtcfe"]
+physics_layer_0/collision_layer = 1
+
 [node name="Node" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_wtcfe")
-format = 2
+[node name="TileMap" type="Node" parent="."]
 
 [node name="Layer1" type="TileMapLayer" parent="TileMap"]
 texture_filter = 1
@@ -126,4 +124,4 @@ scale = Vector2(0.5, 0.5)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="RedDuck" parent="." instance=ExtResource("3_epypp")]
-position = Vector2(692, -33)
+position = Vector2(743, -52)

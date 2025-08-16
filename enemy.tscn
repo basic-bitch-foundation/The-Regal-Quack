@@ -3,14 +3,19 @@
 [ext_resource type="Script" uid="uid://compnehywi7vg" path="res://red_duck.gd" id="1_dyqp1"]
 [ext_resource type="Texture2D" uid="uid://b36mfxg0bgqjx" path="res://duckee_idle1.png" id="2_nvos6"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_qnceo"]
-radius = 10.4403
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4gyqm"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m0vno"]
 height = 28.0
 
-[node name="RedDuck" type="CharacterBody2D" groups=["enemy"]]
+[node name="RedDuck" type="RigidBody2D" groups=["enemy"]]
+process_priority = 2
+process_physics_priority = 3
 collision_layer = 2
+collision_mask = 9
+gravity_scale = 0.0
+can_sleep = false
+lock_rotation = true
 script = ExtResource("1_dyqp1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -19,7 +24,7 @@ texture = ExtResource("2_nvos6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 6)
-shape = SubResource("CircleShape2D_qnceo")
+shape = SubResource("RectangleShape2D_4gyqm")
 
 [node name="HitZone" type="Area2D" parent="."]
 collision_layer = 4
@@ -30,7 +35,7 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_m0vno")
 
 [node name="PointA" type="Marker2D" parent="."]
-position = Vector2(128, 0)
+position = Vector2(316, 0)
 
 [node name="PointB" type="Marker2D" parent="."]
 position = Vector2(-190, 0)
