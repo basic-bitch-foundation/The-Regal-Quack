@@ -1,2 +1,6 @@
 res://node_2d.tscn
+res://player.gd
 res://player.tscn
+res://red_duck.gd
+res://Player.tscn
+res://enemy.tscn
