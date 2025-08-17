@@ -1,16 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755363088
+::res://::1755439842
+16x16 Chicken Leg.png::CompressedTexture2D/CompressedTexture2D::1908131802225963167::1755406290::1755406290::1::::<><><>0<>0<>e9d05e9a97ff08cf82f4af3c4561044f<>res://.godot/imported/16x16 Chicken Leg.png-6f1ab8021cde444c7b965463bd3d2526.ctex::
 duckee_idle1.png::CompressedTexture2D/CompressedTexture2D::4416442767259939305::1755297913::1755297914::1::::<><><>0<>0<>d4ac9f8548717048bf25509508f445ac<>res://.godot/imported/duckee_idle1.png-db37e6360af0fed8b6b13fc62961875e.ctex::
-enemy.tscn::PackedScene::1585583147346440813::1755303298::0::1::::<><><>0<>0<><>::uid://compnehywi7vg::::res://red_duck.gd<>uid://b36mfxg0bgqjx::::res://duckee_idle1.png
+enemy.tscn::PackedScene::1585583147346440813::1755439612::0::1::::<><><>0<>0<><>::uid://compnehywi7vg::::res://red_duck.gd<>uid://b36mfxg0bgqjx::::res://duckee_idle1.png
 icon.svg::CompressedTexture2D/CompressedTexture2D::6624024580214858516::1755212364::1755263126::1::::<><><>0<>0<>400f18156d5cd373f36757c91a7801d9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 node_2d.gd::GDScript/GDScript::2155709939643297247::1755261484::0::1::::<>RefCounted<><>0<>0<><>::
-node_2d.tscn::PackedScene::2713396811744065892::1755303298::0::1::::<><><>0<>0<><>::uid://cjb4s5j0dpdge::::res://pico-8Tiles.png<>uid://dr52pa5lchf5e::::res://player.tscn<>uid://wuck8es2gu1j::::res://enemy.tscn
+node_2d.tscn::PackedScene::2713396811744065892::1755439612::0::1::::<><><>0<>0<><>::uid://cjb4s5j0dpdge::::res://pico-8Tiles.png<>uid://dr52pa5lchf5e::::res://player.tscn<>uid://2gkwfyitf1vv::::res://16x16 Chicken Leg.png<>uid://wuck8es2gu1j::::res://enemy.tscn
 pico-8Tiles.png::CompressedTexture2D/CompressedTexture2D::5408399865707300836::1755247717::1755263126::1::::<><><>0<>0<>6bf9e314a8cc4d5075f83b31ba9475f1<>res://.godot/imported/pico-8Tiles.png-0568979837fb60d15b3695c73336b631.ctex::
-player.gd::GDScript::1209123388892599297::1755303298::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::6481007741999256466::1755303298::0::1::::<><><>0<>0<><>::uid://rhyc5532necv::::res://player.gd<>uid://c1myym6dee7au::::res://icon.svg
-player.tscn::PackedScene::8416069918107791692::1755297229::0::1::::<><><>0<>0<><>::uid://rhyc5532necv::::res://player.gd<>uid://c1myym6dee7au::::res://icon.svg
+player.gd::GDScript::1209123388892599297::1755439298::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::6481007741999256466::1755439612::0::1::::<><><>0<>0<><>::uid://rhyc5532necv::::res://player.gd<>uid://c1myym6dee7au::::res://icon.svg
+player.tscn::PackedScene/PackedScene::8416069918107791692::1755297229::0::1::::<><><>0<>0<><>::uid://rhyc5532necv::::res://player.gd<>uid://c1myym6dee7au::::res://icon.svg
 README.md::TextFile/TextFile::-1::1755262606::0::1::::<><><>0<>0<><>::
-red_duck.gd::GDScript::5781191903606866608::1755303298::0::1::::<>CharacterBody2D<><>0<>0<><>::
+red_duck.gd::GDScript::5781191903606866608::1755369872::0::1::::<>RigidBody2D<><>0<>0<><>::
 Test.tscn::PackedScene/PackedScene::-1::1755216581::0::1::::<><><>0<>0<><>::
 ::res://addons/::1755216581
 ::res://addons/godot_super-wakatime/::1755216581

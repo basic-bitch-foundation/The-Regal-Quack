@@ -1,5 +1,6 @@
-RigidBody2D
+TileMap
 Node
+RigidBody2D
 CharacterBody2D
 Node2D
 Sprite2D
@@ -7,4 +8,3 @@ Marker2D
 CollisionShape2D
 Area2D
 Camera2D
-TileMap

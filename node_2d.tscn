@@ -1,14 +1,13 @@
-[gd_scene load_steps=7 format=4 uid="uid://bewnip57c80gm"]
+[gd_scene load_steps=9 format=4 uid="uid://bewnip57c80gm"]
 
 [ext_resource type="Texture2D" uid="uid://cjb4s5j0dpdge" path="res://pico-8Tiles.png" id="1_wtcfe"]
 [ext_resource type="PackedScene" uid="uid://dr52pa5lchf5e" path="res://player.tscn" id="2_0e48y"]
+[ext_resource type="Texture2D" uid="uid://2gkwfyitf1vv" path="res://16x16 Chicken Leg.png" id="2_0hol4"]
 [ext_resource type="PackedScene" uid="uid://wuck8es2gu1j" path="res://enemy.tscn" id="3_epypp"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hol4"]
 texture = ExtResource("1_wtcfe")
 margins = Vector2i(2, 0)
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
 3:0/0 = 0
 4:0/0 = 0
@@ -96,32 +95,53 @@ margins = Vector2i(2, 0)
 8:8/0 = 0
 9:8/0 = 0
 10:8/0 = 0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSet" id="TileSet_epypp"]
+[sub_resource type="TileSet" id="TileSet_q6r6c"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_0e48y")
+sources/0 = SubResource("TileSetAtlasSource_0hol4")
 
-[sub_resource type="TileSet" id="TileSet_wtcfe"]
-physics_layer_0/collision_layer = 1
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kdubu"]
+texture = ExtResource("2_0hol4")
+0:0/size_in_atlas = Vector2i(16, 16)
+0:0/0 = 0
+0:0/0/custom_data_0 = "chickleg"
+
+[sub_resource type="TileSet" id="TileSet_d21ai"]
+custom_data_layer_0/name = "type"
+custom_data_layer_0/type = 4
+sources/0 = SubResource("TileSetAtlasSource_kdubu")
 
 [node name="Node" type="Node2D"]
-
-[node name="TileMap" type="Node" parent="."]
-
-[node name="Layer1" type="TileMapLayer" parent="TileMap"]
-texture_filter = 1
-tile_map_data = PackedByteArray("AAAAAP//AAAAAAAAAAABAP//AAAAAAAAAAACAP//AAAAAAAAAAADAP//AAAAAAAAAAAEAP//AAAAAAAAAAAFAP//AAAAAAAAAAAGAP//AAAAAAAAAAAHAP//AAAAAAAAAAAIAP//AAAAAAAAAAAJAP//AAAAAAAAAAAKAP//AAAAAAAAAAALAP//AAAAAAAAAAAMAP//AAAAAAAAAAANAP//AAAAAAAAAAAOAP//AAAAAAAAAAAPAP//AAAAAAAAAAAQAP//AAAAAAAAAAARAP//AAAAAAAAAAASAP//AAAAAAAAAAATAP//AAAAAAAAAAAUAP//AAAAAAAAAAAVAP//AAAAAAAAAAAWAP//AAAAAAAAAAAXAP//AAAAAAAAAAAYAP//AAAAAAAAAAAZAP//AAAAAAAAAAAaAP//AAAAAAAAAAAbAP//AAAAAAAAAAAcAP//AAAAAAAAAAAdAP//AAAAAAAAAAAeAP//AAAAAAAAAAAfAP//AAAAAAAAAAAgAP//AAAAAAAAAAAhAP//AAAAAAAAAAAiAP//AAAAAAAAAAAjAP//AAAAAAAAAAAkAP//AAAAAAAAAAAlAP//AAAAAAAAAAAmAP//AAAAAAAAAAAnAP//AAAAAAAAAAAoAP//AAAAAAAAAAApAP//AAAAAAAAAAAqAP//AAAAAAAAAAArAP//AAAAAAAAAAAsAP//AAAAAAAAAAAtAP//AAAAAAAAAAAuAP//AAAAAAAAAAAvAP//AAAAAAAAAAAwAP//AAAAAAAAAAAxAP//AAAAAAAAAAAyAP//AAAAAAAAAAAzAP//AAAAAAAAAAA0AP//AAAAAAAAAAA1AP//AAAAAAAAAAA2AP//AAAAAAAAAAA3AP//AAAAAAAAAAA4AP//AAAAAAAAAAA5AP//AAAAAAAAAAA6AP//AAAAAAAAAAA7AP//AAAAAAAAAAA8AP//AAAAAAAAAAA9AP//AAAAAAAAAAA+AP//AAAAAAAAAAA/AP//AAAAAAAAAABAAP//AAAAAAAAAABBAP//AAAAAAAAAABCAP//AAAAAAAAAABDAP//AAAAAAAAAABEAP//AAAAAAAAAABFAP//AAAAAAAAAABGAP//AAAAAAAAAABHAP//AAAAAAAAAABIAP//AAAAAAAAAABJAP//AAAAAAAAAABKAP//AAAAAAAAAABLAP//AAAAAAAAAABMAP//AAAAAAAAAABNAP//AAAAAAAAAABOAP//AAAAAAAAAABPAP//AAAAAAAAAABQAP//AAAAAAAAAABRAP//AAAAAAAAAABSAP//AAAAAAAAAABTAP//AAAAAAAAAABUAP//AAAAAAAAAABVAP//AAAAAAAAAABWAP//AAAAAAAAAABXAP//AAAAAAAAAABYAP//AAAAAAAAAABZAP//AAAAAAAAAABZAP7/AAAAAAAAAAAAAP7/AAAAAAAAAAA=")
-tile_set = SubResource("TileSet_epypp")
-
-[node name="Layer2" type="TileMapLayer" parent="TileMap"]
-use_parent_material = true
-tile_set = SubResource("TileSet_wtcfe")
 
 [node name="Player" parent="." instance=ExtResource("2_0e48y")]
 position = Vector2(122, -98)
 scale = Vector2(0.5, 0.5)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(0.7, 0.7)
 
 [node name="RedDuck" parent="." instance=ExtResource("3_epypp")]
-position = Vector2(743, -52)
+position = Vector2(751, -32)
+mass = 1000.0
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_q6r6c")
+format = 2
+
+[node name="Layer1" type="TileMapLayer" parent="TileMap"]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAkAP//AAAAAAAAAAAlAP//AAAAAAAAAAAmAP//AAAAAAAAAAAnAP//AAAAAAAAAAAoAP//AAAAAAAAAAApAP//AAAAAAAAAAAqAP//AAAAAAAAAAArAP//AAAAAAAAAAAsAP//AAAAAAAAAAAtAP//AAAAAAAAAAAuAP//AAAAAAAAAAAvAP//AAAAAAAAAAAwAP//AAAAAAAAAAAxAP//AAAAAAAAAAAyAP//AAAAAAAAAAAzAP//AAAAAAAAAAA0AP//AAAAAAAAAAA1AP//AAAAAAAAAAA2AP//AAAAAAAAAAA3AP//AAAAAAAAAAA4AP//AAAAAAAAAAA5AP//AAAAAAAAAAA6AP//AAAAAAAAAAA7AP//AAAAAAAAAAA8AP//AAAAAAAAAAA9AP//AAAAAAAAAAA+AP//AAAAAAAAAAA/AP//AAAAAAAAAABAAP//AAAAAAAAAABBAP//AAAAAAAAAABCAP//AAAAAAAAAABDAP//AAAAAAAAAABEAP//AAAAAAAAAABFAP//AAAAAAAAAABGAP//AAAAAAAAAABHAP//AAAAAAAAAABIAP//AAAAAAAAAABJAP//AAAAAAAAAABKAP//AAAAAAAAAABLAP//AAAAAAAAAABMAP//AAAAAAAAAABNAP//AAAAAAAAAABOAP//AAAAAAAAAABPAP//AAAAAAAAAABQAP//AAAAAAAAAABRAP//AAAAAAAAAABSAP//AAAAAAAAAABTAP//AAAAAAAAAABUAP//AAAAAAAAAABVAP//AAAAAAAAAABVAP7/AAAAAAAAAAAjAP//AAAAAAAAAAAiAP//AAAAAAAAAAAhAP//AAAAAAAAAAAgAP//AAAAAAAAAAAfAP//AAAAAAAAAAAeAP//AAAAAAAAAAAdAP//AAAAAAAAAAAcAP//AAAAAAAAAAAbAP//AAAAAAAAAAAaAP//AAAAAAAAAAAZAP//AAAAAAAAAAAYAP//AAAAAAAAAAAXAP//AAAAAAAAAAAWAP//AAAAAAAAAAAVAP//AAAAAAAAAAAUAP//AAAAAAAAAAATAP//AAAAAAAAAAASAP//AAAAAAAAAAARAP//AAAAAAAAAAAQAP//AAAAAAAAAAAPAP//AAAAAAAAAAAOAP//AAAAAAAAAAANAP//AAAAAAAAAAAMAP//AAAAAAAAAAALAP//AAAAAAAAAAAKAP//AAAAAAAAAAAJAP//AAAAAAAAAAAIAP//AAAAAAAAAAAHAP//AAAAAAAAAAAGAP//AAAAAAAAAAAFAP//AAAAAAAAAAAEAP//AAAAAAAAAAADAP//AAAAAAAAAAACAP//AAAAAAAAAAABAP//AAAAAAAAAAAAAP//AAAAAAAAAAD/////AAAAAAAAAAD+////AAAAAAAAAAD9////AAAAAAAAAAD8////AAAAAAAAAAD8//7/AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_q6r6c")
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_d21ai")
+format = 2
+
+[node name="Layer1" type="TileMapLayer" parent="TileMap2"]
+use_parent_material = true
+position = Vector2(1, -3)
+scale = Vector2(0.1, 0.1)
+tile_map_data = PackedByteArray("AAC6Au//AAACAAMAAACKAu//AAACAAMAAABzAuX/AAACAAMAAABVAuf/AAACAAMAAABWAuf/AAACAAMAAABKAPj/AAACAAMAAAArA+X/AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_d21ai")
