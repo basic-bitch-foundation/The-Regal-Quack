@@ -1,18 +1,27 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1755439842
+::res://::1755497927
 16x16 Chicken Leg.png::CompressedTexture2D/CompressedTexture2D::1908131802225963167::1755406290::1755406290::1::::<><><>0<>0<>e9d05e9a97ff08cf82f4af3c4561044f<>res://.godot/imported/16x16 Chicken Leg.png-6f1ab8021cde444c7b965463bd3d2526.ctex::
+bg main.png::CompressedTexture2D/CompressedTexture2D::3216334949905333759::1755497366::1755497366::1::::<><><>0<>0<>2e780704d2404ccf39076b17db21efff<>res://.godot/imported/bg main.png-9b7c7df5ebce05e6cf5247770e89a5e2.ctex::
 duckee_idle1.png::CompressedTexture2D/CompressedTexture2D::4416442767259939305::1755297913::1755297914::1::::<><><>0<>0<>d4ac9f8548717048bf25509508f445ac<>res://.godot/imported/duckee_idle1.png-db37e6360af0fed8b6b13fc62961875e.ctex::
-enemy.tscn::PackedScene::1585583147346440813::1755439612::0::1::::<><><>0<>0<><>::uid://compnehywi7vg::::res://red_duck.gd<>uid://b36mfxg0bgqjx::::res://duckee_idle1.png
+duckee_walk_run3.png::CompressedTexture2D/CompressedTexture2D::5236829046863788663::1755490885::1755490885::1::::<><><>0<>0<>d9e6bd2de12001a7a9bfe708737614b3<>res://.godot/imported/duckee_walk_run3.png-acaaf63979f61c0cb07af4594ee5b27b.ctex::
+enemy.tscn::PackedScene::1585583147346440813::1755497884::0::1::::<><><>0<>0<><>::uid://compnehywi7vg::::res://red_duck.gd<>uid://b36mfxg0bgqjx::::res://duckee_idle1.png
+htp_buton__1_-removebg-preview.png::CompressedTexture2D/CompressedTexture2D::5956453451291459447::1755458888::1755458889::1::::<><><>0<>0<>7236c7da34f07ecd7743b608ca39c1ba<>res://.godot/imported/htp_buton__1_-removebg-preview.png-bb3d2505e48763ad2edc730fa68935f0.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6624024580214858516::1755212364::1755263126::1::::<><><>0<>0<>400f18156d5cd373f36757c91a7801d9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+image-removebg-preview.png::CompressedTexture2D/CompressedTexture2D::868919759525505292::1755452875::1755452876::1::::<><><>0<>0<>0ef21cd90309cfaa1f57da5b1fca7122<>res://.godot/imported/image-removebg-preview.png-4e0acbafaa55d9a4632e7b29f4e4f281.ctex::
+main_menu.gd::GDScript::821507794679645861::1755461552::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::3633724262086971850::1755497884::0::1::::<><><>0<>0<><>::uid://lx7d4bj2sgk0::::res://main_menu.gd<>uid://bge7xwdtwp3a7::::res://source-image.jpg<>uid://31ungbrbqba2::::res://play buttn.png<>uid://cq4l6hk1dr0p4::::res://htp_buton__1_-removebg-preview.png<>uid://mm58muottr7a::::res://image-removebg-preview.png
 node_2d.gd::GDScript/GDScript::2155709939643297247::1755261484::0::1::::<>RefCounted<><>0<>0<><>::
-node_2d.tscn::PackedScene::2713396811744065892::1755439612::0::1::::<><><>0<>0<><>::uid://cjb4s5j0dpdge::::res://pico-8Tiles.png<>uid://dr52pa5lchf5e::::res://player.tscn<>uid://2gkwfyitf1vv::::res://16x16 Chicken Leg.png<>uid://wuck8es2gu1j::::res://enemy.tscn
+node_2d.tscn::PackedScene::2713396811744065892::1755497884::0::1::::<><><>0<>0<><>::uid://cylpiryrnvvxy::::res://Player.tscn<>uid://cjb4s5j0dpdge::::res://pico-8Tiles.png<>uid://2gkwfyitf1vv::::res://16x16 Chicken Leg.png<>uid://dt5tbsq10iiu6::::res://skull.png<>uid://wuck8es2gu1j::::res://enemy.tscn<>uid://bhg78s3l6jx8r::::res://gamesfx/bgmusic.wav<>uid://cccpxhb18kv48::::res://gamesfx/jump.wav<>uid://d1wvk7hgqmu1s::::res://gamesfx/hurt.wav<>uid://dt66l6hmg6ssr::::res://gamesfx/chickleg.wav<>uid://bpa3w25dggpwx::::res://gamesfx/death.wav<>uid://0n22l0upk5se::::res://gamesfx/restart.wav<>uid://bl3atjecl2h2f::::res://bg main.png
 pico-8Tiles.png::CompressedTexture2D/CompressedTexture2D::5408399865707300836::1755247717::1755263126::1::::<><><>0<>0<>6bf9e314a8cc4d5075f83b31ba9475f1<>res://.godot/imported/pico-8Tiles.png-0568979837fb60d15b3695c73336b631.ctex::
-player.gd::GDScript::1209123388892599297::1755439298::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::6481007741999256466::1755439612::0::1::::<><><>0<>0<><>::uid://rhyc5532necv::::res://player.gd<>uid://c1myym6dee7au::::res://icon.svg
-player.tscn::PackedScene/PackedScene::8416069918107791692::1755297229::0::1::::<><><>0<>0<><>::uid://rhyc5532necv::::res://player.gd<>uid://c1myym6dee7au::::res://icon.svg
+play buttn.png::CompressedTexture2D/CompressedTexture2D::2020199316105827727::1755455365::1755455365::1::::<><><>0<>0<>3ccb3d86b3d421f52190326bd13316a8<>res://.godot/imported/play buttn.png-f6e383a343919357fa59378e996ec083.ctex::
+player.gd::GDScript::1209123388892599297::1755497401::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::6481007741999256466::1755497884::0::1::::<><><>0<>0<><>::uid://rhyc5532necv::::res://player.gd<>uid://db2lebjea4s36::::res://player sprites animations/duckee_death.png<>uid://c7u17dilbvk8i::::res://player sprites animations/duckee_take_damage1.png<>uid://buro0mool8e3d::::res://player sprites animations/duckee_take_damage2.png<>uid://fkuleqlb7its::::res://player sprites animations/duckee_idle1.png<>uid://du0n0sqk3vgmw::::res://player sprites animations/duckee_idle2.png<>uid://c0kr6rllj16hj::::res://player sprites animations/duckee_idle3.png<>uid://dysmbmen5akeo::::res://player sprites animations/duckee_idle4.png<>uid://c0mb7ylcx6ksy::::res://player sprites animations/duckee_jump1.png<>uid://crv4u8l2unkut::::res://player sprites animations/duckee_jump2.png<>uid://crnyadupxenwq::::res://player sprites animations/duckee_jump3.png<>uid://dbi5bkkw1wppi::::res://player sprites animations/duckee_jump4.png<>uid://chx8fuwvrsn3m::::res://player sprites animations/duckee_walk_run1.png<>uid://cfswfauia5jjr::::res://player sprites animations/duckee_walk_run2.png<>uid://bajhoqrgh8auo::::res://player sprites animations/duckee_walk_run3.png<>uid://bs81dfnwglkt4::::res://player sprites animations/duckee_walk_run4.png
 README.md::TextFile/TextFile::-1::1755262606::0::1::::<><><>0<>0<><>::
-red_duck.gd::GDScript::5781191903606866608::1755369872::0::1::::<>RigidBody2D<><>0<>0<><>::
+red_duck.gd::GDScript/GDScript::5781191903606866608::1755369872::0::1::::<>RigidBody2D<><>0<>0<><>::
+skull.png::CompressedTexture2D/CompressedTexture2D::8555937792832406519::1755465668::1755465668::1::::<><><>0<>0<>d0ed0e00848e380685756e142468e0da<>res://.godot/imported/skull.png-cf249689766e1dff19e268afa5f14778.ctex::
+source-image.jpg::CompressedTexture2D/CompressedTexture2D::2817796434607284744::1755452928::1755452930::1::::<><><>0<>0<>e47f1c8d16e5b2b8d042e3f9369746cb<>res://.godot/imported/source-image.jpg-77ce8c89c60e90e522f779716f8c938e.ctex::
 Test.tscn::PackedScene/PackedScene::-1::1755216581::0::1::::<><><>0<>0<><>::
+ui.gd::GDScript::8163135761154933097::1755480404::0::1::::<>CanvasLayer<><>0<>0<><>::
 ::res://addons/::1755216581
 ::res://addons/godot_super-wakatime/::1755216581
 api_key_prompt.tscn::PackedScene/PackedScene::3919262858641749045::1755216581::0::1::::<><><>0<>0<><>::
@@ -23,7 +32,35 @@ heartbeat.gd::GDScript/GDScript::7400255812372611545::1755216581::0::1::::<>RefC
 plugin.cfg::TextFile/TextFile::-1::1755216581::0::1::::<><><>0<>0<><>::
 README.md::TextFile/TextFile::-1::1755216581::0::1::::<><><>0<>0<><>::
 utils.gd::GDScript/GDScript::2326537647632540441::1755216581::0::1::::<>RefCounted<><>0<>0<><>::
+::res://gamesfx/::1755495409
+bgmusic.wav::AudioStreamWAV/AudioStreamWAV::2892131719867498599::1755495408::1755495409::1::::<><><>0<>0<>7585d07f3b3db44b037b6f487dd942e3<>res://.godot/imported/bgmusic.wav-bc4068f450dbac10fde5b12787072e2a.sample::
+chickleg.wav::AudioStreamWAV/AudioStreamWAV::8558749300678454101::1755495408::1755495408::1::::<><><>0<>0<>5ebca935c3e29f7e224fec5be234c5b4<>res://.godot/imported/chickleg.wav-8bd2f3fac06917c0426b473426d7b27e.sample::
+death.wav::AudioStreamWAV/AudioStreamWAV::3440994166146120111::1755495408::1755495408::1::::<><><>0<>0<>d6068b6398f6a53cc49ab6dafabc65aa<>res://.godot/imported/death.wav-bb11fba49e91459e054d8a05e0dd9f2e.sample::
+hurt.wav::AudioStreamWAV/AudioStreamWAV::9030882902899930038::1755495408::1755495408::1::::<><><>0<>0<>232c5a10e00a84832f3a50f2319c7ed5<>res://.godot/imported/hurt.wav-ceddce66f500b3e6392bdab6d7f6458d.sample::
+jump.wav::AudioStreamWAV/AudioStreamWAV::4918300008755789871::1755495408::1755495408::1::::<><><>0<>0<>388278e951744677483d07122ec49398<>res://.godot/imported/jump.wav-c611a7de02852fdf8d9db8658f995e78.sample::
+restart.wav::AudioStreamWAV/AudioStreamWAV::1783246194299857248::1755495400::1755495401::1::::<><><>0<>0<>56575c9b06c3f1c03c85128588bde0c9<>res://.godot/imported/restart.wav-1bab27dbb3475160b0d4a446853b4f9f.sample::
 ::res://images/::1755263127
 godotwaka2.png::CompressedTexture2D/CompressedTexture2D::7695078048682983070::1755213459::1755263127::1::::<><><>0<>0<>7322629383e9e73e4bbd0492bbf0128d<>res://.godot/imported/godotwaka2.png-7d3d010fb4adc0d433467ab1cc4754ed.ctex::
 godotwaka.png::CompressedTexture2D/CompressedTexture2D::4612183302357158838::1755213459::1755263126::1::::<><><>0<>0<>3a9ec34a2a2e87b471537a3b69e5a5aa<>res://.godot/imported/godotwaka.png-ef0518417b4f997d237759e5551dd05d.ctex::
 icon.jpg::CompressedTexture2D/CompressedTexture2D::4710022074728861199::1755213459::1755263126::1::::<><><>0<>0<>4aaf08287e2ddd27a1f517a5ddb5eec3<>res://.godot/imported/icon.jpg-64f68b30ea939aa8019167e67dffb2db.ctex::
+::res://player sprites animations/::1755491331
+duckee_death.png::CompressedTexture2D/CompressedTexture2D::7285864190782493383::1755491309::1755491309::1::::<><><>0<>0<>ea4cbbabd1f060cf4c8b7cd9b767ff34<>res://.godot/imported/duckee_death.png-eec7124f81ec4c428bb44dada3f2c653.ctex::
+duckee_idle1.png::CompressedTexture2D/CompressedTexture2D::372822214631707688::1755491331::1755491331::1::::<><><>0<>0<>52ae6d2c23d120cc79da8f6c9e5b1db7<>res://.godot/imported/duckee_idle1.png-fe83208c3f23c22a7ae025e13c0e87ef.ctex::
+duckee_idle2.png::CompressedTexture2D/CompressedTexture2D::8615483304074809326::1755491331::1755491331::1::::<><><>0<>0<>5256e6f41c056a7bb762ed7e98da5006<>res://.godot/imported/duckee_idle2.png-be03c9632d0e7d723d8519aa9649d177.ctex::
+duckee_idle3.png::CompressedTexture2D/CompressedTexture2D::6549294694768366835::1755491331::1755491331::1::::<><><>0<>0<>09d2763850304ad5234946080896589e<>res://.godot/imported/duckee_idle3.png-4c8df9a321603721e1dba665e798dd28.ctex::
+duckee_idle4.png::CompressedTexture2D/CompressedTexture2D::8881684124762440510::1755491331::1755491331::1::::<><><>0<>0<>13846ffd643aeb5f3fcd3884a20a605e<>res://.godot/imported/duckee_idle4.png-6bbb21b811641c7c2d440d2525e47bc0.ctex::
+duckee_jump1.png::CompressedTexture2D/CompressedTexture2D::6552454131459541388::1755491282::1755491282::1::::<><><>0<>0<>0d2fc3b57ad73081030e316e14676d1e<>res://.godot/imported/duckee_jump1.png-f9ea1d698a80ac6932406d380bfbe8ac.ctex::
+duckee_jump2.png::CompressedTexture2D/CompressedTexture2D::6011201902253743019::1755491282::1755491282::1::::<><><>0<>0<>1e30133da210dcc89a3e08113036d027<>res://.godot/imported/duckee_jump2.png-270a806207d587dda11e6247d820fdb0.ctex::
+duckee_jump3.png::CompressedTexture2D/CompressedTexture2D::5994346017040503712::1755491282::1755491282::1::::<><><>0<>0<>5dca446d567255ee33c7ec599e5f8128<>res://.godot/imported/duckee_jump3.png-ed1430f2f2e1c7936d66682d0c7f5881.ctex::
+duckee_jump4.png::CompressedTexture2D/CompressedTexture2D::7247789754043464786::1755491282::1755491282::1::::<><><>0<>0<>965b109068e784428072ef7955df073c<>res://.godot/imported/duckee_jump4.png-14ff8c6b8725577233fb13a87cba1d4a.ctex::
+duckee_take_damage1.png::CompressedTexture2D/CompressedTexture2D::7061807876531768490::1755491296::1755491297::1::::<><><>0<>0<>73ee5c95099cbe4f2ad684636983e3a9<>res://.godot/imported/duckee_take_damage1.png-18ea8105581f1d34c5d231b9a5fc179d.ctex::
+duckee_take_damage2.png::CompressedTexture2D/CompressedTexture2D::3826187313578679619::1755491296::1755491297::1::::<><><>0<>0<>bafdaa275650ade951d01bee7d861f4b<>res://.godot/imported/duckee_take_damage2.png-6336a7f681ac3091175bd035768faeaa.ctex::
+duckee_walk_run1.png::CompressedTexture2D/CompressedTexture2D::5313657636356906552::1755491227::1755491228::1::::<><><>0<>0<>56c63da0aa2dac36de9a6a27b969284b<>res://.godot/imported/duckee_walk_run1.png-c7b88f2123d16495435b4977c06e715f.ctex::
+duckee_walk_run2.png::CompressedTexture2D/CompressedTexture2D::5162289119220588247::1755491227::1755491228::1::::<><><>0<>0<>38fde97e9d60f282131b05fb5d707bdc<>res://.godot/imported/duckee_walk_run2.png-aa5f69d1a3bc48d78f44dce2fa87ddf7.ctex::
+duckee_walk_run3.png::CompressedTexture2D/CompressedTexture2D::2405450970462214830::1755491227::1755491228::1::::<><><>0<>0<>15ba3d628b0c2891f27eb93a68a2e89b<>res://.godot/imported/duckee_walk_run3.png-d6605cf0fa4b30137c3fa0bd83db7e2c.ctex::
+duckee_walk_run4.png::CompressedTexture2D/CompressedTexture2D::3719528617962549379::1755491227::1755491228::1::::<><><>0<>0<>ff7555f03ef0951080701bf6de3c3c71<>res://.godot/imported/duckee_walk_run4.png-dcc75c20bc371ee8b21a8a2b07189151.ctex::
+::res://sprite_sheet/::1755490911
+duckee_walk_run1.png::CompressedTexture2D/CompressedTexture2D::1039462884112077182::1755490879::1755490879::1::::<><><>0<>0<>49d5fb085e4b7412b119f7b1fe9c9360<>res://.godot/imported/duckee_walk_run1.png-2e692077cf151b4ad3e24e2685cbc6d2.ctex::
+duckee_walk_run2.png::CompressedTexture2D/CompressedTexture2D::1154364714948462034::1755490881::1755490882::1::::<><><>0<>0<>c0660c6701a149328e4d76b7c00cee41<>res://.godot/imported/duckee_walk_run2.png-1c89c5166706aaf70ae10b1cd6031768.ctex::
+duckee_walk_run3.png::CompressedTexture2D/CompressedTexture2D::3312619200723236114::1755490911::1755490911::1::::<><><>0<>0<>ba9d0757a3dab519c4fccce16e0a9d52<>res://.godot/imported/duckee_walk_run3.png-97a8897d804ff74e779ba03816b52689.ctex::
+duckee_walk_run4.png::CompressedTexture2D/CompressedTexture2D::6098556134773845277::1755490888::1755490888::1::::<><><>0<>0<>0f2fdd6268ec64c013292f61a968c041<>res://.godot/imported/duckee_walk_run4.png-9d855caad3048745b562f4ce09b85c35.ctex::

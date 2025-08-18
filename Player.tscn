@@ -1,18 +1,110 @@
-[gd_scene load_steps=4 format=3 uid="uid://cylpiryrnvvxy"]
+[gd_scene load_steps=19 format=3 uid="uid://cylpiryrnvvxy"]
 
 [ext_resource type="Script" uid="uid://rhyc5532necv" path="res://player.gd" id="1_kpjcp"]
-[ext_resource type="Texture2D" uid="uid://c1myym6dee7au" path="res://icon.svg" id="2_kne1u"]
+[ext_resource type="Texture2D" uid="uid://db2lebjea4s36" path="res://player sprites animations/duckee_death.png" id="2_jatw7"]
+[ext_resource type="Texture2D" uid="uid://c7u17dilbvk8i" path="res://player sprites animations/duckee_take_damage1.png" id="3_rv870"]
+[ext_resource type="Texture2D" uid="uid://buro0mool8e3d" path="res://player sprites animations/duckee_take_damage2.png" id="4_efikj"]
+[ext_resource type="Texture2D" uid="uid://fkuleqlb7its" path="res://player sprites animations/duckee_idle1.png" id="5_itxgx"]
+[ext_resource type="Texture2D" uid="uid://du0n0sqk3vgmw" path="res://player sprites animations/duckee_idle2.png" id="6_cgsek"]
+[ext_resource type="Texture2D" uid="uid://c0kr6rllj16hj" path="res://player sprites animations/duckee_idle3.png" id="7_0pi4m"]
+[ext_resource type="Texture2D" uid="uid://dysmbmen5akeo" path="res://player sprites animations/duckee_idle4.png" id="8_sg6sq"]
+[ext_resource type="Texture2D" uid="uid://c0mb7ylcx6ksy" path="res://player sprites animations/duckee_jump1.png" id="9_h84ma"]
+[ext_resource type="Texture2D" uid="uid://crv4u8l2unkut" path="res://player sprites animations/duckee_jump2.png" id="10_47wu6"]
+[ext_resource type="Texture2D" uid="uid://crnyadupxenwq" path="res://player sprites animations/duckee_jump3.png" id="11_2n1s8"]
+[ext_resource type="Texture2D" uid="uid://dbi5bkkw1wppi" path="res://player sprites animations/duckee_jump4.png" id="12_3vjad"]
+[ext_resource type="Texture2D" uid="uid://chx8fuwvrsn3m" path="res://player sprites animations/duckee_walk_run1.png" id="13_yt0h1"]
+[ext_resource type="Texture2D" uid="uid://cfswfauia5jjr" path="res://player sprites animations/duckee_walk_run2.png" id="14_vd78s"]
+[ext_resource type="Texture2D" uid="uid://bajhoqrgh8auo" path="res://player sprites animations/duckee_walk_run3.png" id="15_ictha"]
+[ext_resource type="Texture2D" uid="uid://bs81dfnwglkt4" path="res://player sprites animations/duckee_walk_run4.png" id="16_1jgrc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7wy67"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jatw7")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_rv870")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_efikj")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_itxgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cgsek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0pi4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sg6sq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_h84ma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_47wu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2n1s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_3vjad")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_yt0h1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_vd78s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ictha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_1jgrc")
+}],
+"loop": true,
+"name": &"run",
+"speed": 9.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
-size = Vector2(120, 122)
+size = Vector2(25.5, 19)
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
-collision_mask = 10
+collision_mask = 11
 script = ExtResource("1_kpjcp")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_kne1u")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 2
+texture_filter = 1
+position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_7wy67")
+animation = &"jump"
+frame_progress = 0.201009
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 1)
+position = Vector2(-0.25, 6.5)
 shape = SubResource("RectangleShape2D_hqtel")
